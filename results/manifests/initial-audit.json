@@ -1,0 +1,30 @@
+{
+  "id": "initial-audit",
+  "question": "Do the published expressions satisfy their stated component equations?",
+  "source_manifest": "references/source-manifest.json",
+  "environment": "results/manifests/environment.txt",
+  "code_base_commit": "7adc39e86abcb45f836323391ed9a09faeb0d389",
+  "working_tree": "uncommitted scripts; hashes below identify exact executed source",
+  "source_hashes": {
+    "experiments/consistency_audit.py": "54282dcda3635c8bb16f7290e64890b046e6342623b1919a68029aa76240ca5e",
+    "experiments/derive_geometry.py": "6f4925fc921ea89ed0745889dd0903387ebabf570561dc818607b5ebc998b935"
+  },
+  "outputs": [
+    {
+      "path": "results/residuals/initial-audit.json",
+      "sha256": "9e76c7c705c06f699ad2c41405fac19f4aeb1875180f4da6855393a2c0aa1d7c"
+    },
+    {
+      "path": "results/residuals/geometry-derivation.txt",
+      "sha256": "2a9dc58dd6714588989644ae2ed7e8455b14c9b0496c8a29416fe1451ca75df0"
+    }
+  ],
+  "wall_seconds": 4.761365942999873,
+  "precision": "exact symbolic and 50 decimal digits",
+  "status": "completed",
+  "limitations": [
+    "No journal-version comparison yet",
+    "Residual normalization and independent matter-expression transcription pending",
+    "Aggregate CPU consumption not measured; wall time recorded"
+  ]
+}

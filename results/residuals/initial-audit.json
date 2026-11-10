@@ -1,0 +1,42 @@
+{
+  "source": "arXiv:2406.08250v1",
+  "verification_scope": "Published components only; independent tensor derivation pending",
+  "parameters": {
+    "r0": 1,
+    "beta": "0.01",
+    "critical": "0.005",
+    "omega": 3
+  },
+  "symbolic_density": "0",
+  "symbolic_conservation": "0",
+  "throat_radial": "-(-50*pi**5*beta**2*omega - 25*pi**5*beta**2 - 10800*pi**3*beta*critical*omega*r0**6 - 60*pi**5*beta*omega*r0**2 - 30*pi**5*beta*r0**2 - 6480*pi**3*critical*omega*r0**8 + 583200*critical*r0**10 - 18*pi**5*omega*r0**4 - 9*pi**5*r0**4)/(583200*critical*r0**12)",
+  "samples": [
+    {
+      "r": "1001/1000",
+      "residuals": {
+        "density": "0",
+        "conservation": "0",
+        "radial": "6.8595848382993901678269208070343470780000745342453",
+        "angular": "16.522651898842236210662972337510122670165577116759"
+      }
+    },
+    {
+      "r": "11/10",
+      "residuals": {
+        "density": "0",
+        "conservation": "0",
+        "radial": "5.1315516953998605242133914381638937453486145449848",
+        "angular": "14.326273046049767826235903766371765744758002449616"
+      }
+    },
+    {
+      "r": "2",
+      "residuals": {
+        "density": "0",
+        "conservation": "0",
+        "radial": "1.3835440429510423637281999797385693254972280410361",
+        "angular": "2.5990813917867410822488290415111012648054794642546"
+      }
+    }
+  ]
+}

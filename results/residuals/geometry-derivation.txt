@@ -1,0 +1,4 @@
+temporal derived: -Derivative(b(r), r)/r**2 difference: 0
+radial derived: (2*r**2*Derivative(Phi(r), r) - 2*r*b(r)*Derivative(Phi(r), r) - b(r))/r**3 difference: 0
+angular derived: Derivative(Phi(r), r)**2 + Derivative(Phi(r), (r, 2)) - b(r)*Derivative(Phi(r), r)**2/r - b(r)*Derivative(Phi(r), (r, 2))/r - Derivative(Phi(r), r)*Derivative(b(r), r)/(2*r) + Derivative(Phi(r), r)/r - b(r)*Derivative(Phi(r), r)/(2*r**2) - Derivative(b(r), r)/(2*r**2) + b(r)/(2*r**3) difference: 0
+All metric-derived diagonal components agree with the implemented geometric formulas.
