@@ -1,0 +1,18 @@
+{
+  "source": "arXiv:2406.08250v1 equations 30\u201331",
+  "published_primitive": "7*pi**5*beta**2/(524880*critical*r**9) + 7*pi**3*beta/(810*r**3) + 17*pi**5*beta/(680400*critical*r**7) + pi**3/(45*r) + pi**5/(81000*critical*r**5)",
+  "independently_integrated_primitive": "-(-875*pi**5*beta**2 - 567000*pi**3*beta*critical*r**6 - 1350*pi**5*beta*r**2 - 1020600*pi**3*critical*r**8 - 567*pi**5*r**4)/(45927000*critical*r**9)",
+  "derivative_defect": "pi**3*beta*(5*pi**2*beta + 1080*critical*r**6 + 3*pi**2*r**2)/(97200*critical*r**10)",
+  "parameters": {
+    "r0": 1,
+    "R": "1.1",
+    "beta": "0.01",
+    "critical": "0.005",
+    "omega": 3
+  },
+  "published_integral": "-0.357230521730357526017602846072054087534492055431568035537892",
+  "symbolic_integral": "-0.358850037847735492853390334072990252736134681373761458717447",
+  "quadrature": "-0.358850037847735492853390334072990252736134681373761458717446",
+  "quadrature_absolute_error": "7.00089218759378442053707206050263977066403368981131302473876e-61",
+  "interpretation": "Arithmetic check of prescribed integrand; not a physical exotic-matter validation of the inconsistent geometry."
+}

@@ -19,3 +19,7 @@ Exact asymptotic coefficients are 8*omega/(1+omega) and 16*omega^2/(1+omega)^2. 
 ## Independent numerical confirmation and inventory
 
 Separate mpmath transcription and numerical differentiation agree with symbolic pressure residuals at four radii, at 30/60/100 digits. Normalized radial residual at r=1.1 is approximately 1.32068 using max(|lhs|,|rhs|,1/r^2). Density/conservation are within precision-scaled tolerance. Added mathematical source blocks and preliminary literature log; inventory is not yet complete at individual-symbol and equation-dependency level.
+
+## VIQ arithmetic audit
+
+Equation 31 does not differentiate to equation 30 integrand for beta>0. Three beta-dependent antiderivative coefficients differ from direct integration (80/9, 320/21, 800/81 in k/pi factors). Independent quadrature agrees with direct integration to <1e-55 for the documented sample. Original expression preserved in experiments/integral_audit.py. Added assumptions ledger. Journal correspondence remains unresolved.

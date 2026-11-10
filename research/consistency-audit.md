@@ -48,3 +48,22 @@ can characterize published expressions but cannot validate their interpretation
 as the stated isotropic field-equation solution. Do not silently alter them.
 Journal-version correspondence, independent matter transcription, numerical
 normalization, full equation inventory and literature priority remain unresolved.
+
+## VIQ expression check
+
+For omega=3, the definition uses rho_e+p_e=4*rho-8*rho^2/rho_c.
+Writing the antiderivative in powers of radius, direct integration gives
+
+    F(r)=16*pi*k/r + 80*pi*k*beta/(9*r^3)
+       +32*pi*k^2/(5*rho_c*r^5)
+       +320*pi*k^2*beta/(21*rho_c*r^7)
+       +800*pi*k^2*beta^2/(81*rho_c*r^9).
+
+The definite integral is F(R)-F(r0). The published equation 31 instead uses
+56, 272 and 560 for the three beta-dependent coefficients. Its derivative
+defect is positive for beta>0, rho_c>0, r>0; it vanishes when beta=0.
+Both formulas vanish at R=r0, so that boundary check alone cannot detect it.
+For r0=1, R=1.1, beta=0.01, rho_c=0.005, the published expression is
+-0.3572305217303575 while direct integration gives -0.3588500378477355.
+Independent 60-digit quadrature agrees with direct symbolic integration.
+See experiments/integral_audit.py and its machine-readable evidence.

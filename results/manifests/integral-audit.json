@@ -1,0 +1,30 @@
+{
+  "id": "integral-audit",
+  "question": "Does published equation 31 integrate equation 30?",
+  "source_manifest": "references/source-manifest.json",
+  "environment_manifest": "results/manifests/environment.txt",
+  "base_commit": "b3cde46995cc9600975472c30d243fd5708cf035",
+  "source_hashes": {
+    "experiments/integral_audit.py": "f8f1b460248941e5f72115e7238ce93c6a3fbbd348235a75861144304c449d63",
+    "src/wormcheck/PublishedModel/PublishedModel.py": "d2ba1d4604b588de99c710b5d4cbb8b61a6e753c73935bc23cc58e9c110bd09f"
+  },
+  "output": {
+    "path": "results/residuals/integral-audit.json",
+    "sha256": "ab12c6bf7e31dae632ce9f859d703ec0bdfd0a201455bd759486e70a0b0195a9"
+  },
+  "parameters": "stored in output",
+  "methods": [
+    "symbolic differentiation",
+    "symbolic integration",
+    "independent mpmath quadrature"
+  ],
+  "precision_digits": 60,
+  "quadrature_crosscheck_absolute_tolerance": "1e-55",
+  "wall_seconds": 3.8440695599997525,
+  "cpu_seconds": "container CPU not captured; host orchestration CPU is not a scientific computation measure",
+  "status": "completed",
+  "warnings": [
+    "journal version comparison pending",
+    "integral is a formal diagnostic for prescribed matter, not a validated geometry"
+  ]
+}

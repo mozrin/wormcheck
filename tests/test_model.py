@@ -60,3 +60,18 @@ def test_independent_numerical_transcription_agrees():
                 symbolic = model.residuals[name].subs(parameters).evalf(50)
                 independent = s.Float(row['components'][name]['residual'],50)
                 assert abs(symbolic-independent) < s.Float('1e-45')
+
+
+def test_volume_integral_derivative_and_independent_quadrature():
+    import json
+    import subprocess
+    import sys
+    import os
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[1]
+    environment = dict(os.environ, PYTHONPATH=str(root/'src'))
+    result = json.loads(subprocess.check_output([sys.executable,str(root/'experiments'/'integral_audit.py')],text=True,env=environment))
+    assert result['derivative_defect'] != '0'
+    assert s.Float(result['quadrature_absolute_error']) < s.Float('1e-55')
+    assert abs(s.Float(result['published_integral'])-s.Float(result['symbolic_integral'])) > s.Float('0.001')
