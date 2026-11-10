@@ -11,3 +11,7 @@ Executed experiments/consistency_audit.py and experiments/derive_geometry.py in 
 ## Package and source check
 
 Added PublishedModel symbolic package and three tests; all pass in the isolated container. Tests check density/conservation, throat normalization, necessary throat pressure constraint, and nonzero sampled residuals. ArXiv main.tex confirms the implemented shape/redshift expressions. Journal full-text access returned 403; cannot transfer the finding to the journal version yet. See docs/independent-derivation.md.
+
+## Analytical pressure obstruction
+
+Exact asymptotic coefficients are 8*omega/(1+omega) and 16*omega^2/(1+omega)^2. They preclude vanishing rational residuals on an open interval for omega!=0,-1 at fixed positive finite critical density. Residual Bianchi identity holds but does not force pressure residuals to zero. Branch B recorded for arXiv v1 strict Casimir case; see research/consistency-audit.md. Five tests pass. Journal correspondence and novelty remain unresolved.

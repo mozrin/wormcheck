@@ -1,0 +1,10 @@
+{
+  "source": "arXiv:2406.08250v1",
+  "assumptions": "r0>0, critical>0 finite, beta>=0, omega != -1; asymptotic mathematical limit",
+  "residual_bianchi_identity": "0",
+  "scaled_limits": {
+    "radial": "8*omega/(omega + 1)",
+    "angular": "16*omega**2/(omega + 1)**2"
+  },
+  "consequence": "For omega=3, scaled radial and angular residuals tend to 6 and 9. These rational residuals cannot vanish identically on any open radial interval. No physical large-radius validity is assumed."
+}

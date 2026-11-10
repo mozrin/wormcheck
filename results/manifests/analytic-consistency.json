@@ -1,0 +1,26 @@
+{
+  "id": "analytic-consistency",
+  "question": "Do conservation and density imply the remaining field equations?",
+  "source_manifest": "references/source-manifest.json",
+  "environment_manifest": "results/manifests/environment.txt",
+  "base_commit": "7702c079813c79e3c708c68e4cc2c84e574c02a6",
+  "source_hashes": {
+    "experiments/analytic_consistency.py": "44961404a8553bb449aef28fc58d00dcef25a529661fae001bab5ad7543da280",
+    "src/wormcheck/PublishedModel/PublishedModel.py": "d2ba1d4604b588de99c710b5d4cbb8b61a6e753c73935bc23cc58e9c110bd09f"
+  },
+  "output": {
+    "path": "results/residuals/analytic-consistency.json",
+    "sha256": "24fe93ba881f7b3e53b96c8e7c1e83b590744b0cf6c309f63f7a765e30204553"
+  },
+  "parameters": "symbolic; r0>0, critical>0 finite, beta>=0, omega!=-1",
+  "method": "exact symbolic residual identity and limits",
+  "precision": "exact",
+  "tolerances": "not applicable",
+  "wall_seconds": 12.744569667999713,
+  "cpu_seconds": "not measured",
+  "status": "completed",
+  "warnings": [
+    "journal comparison incomplete",
+    "no external scientific review"
+  ]
+}
