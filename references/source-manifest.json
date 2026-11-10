@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2406.08250v1",
+      "retrieved_at": "2026-11-10T23:07:56.131569+00:00",
+      "sha256": "0452bbc85c487dcbd9ad53248cc5f3abb1d2f9d9d2e18f649154dbaeb7ce4ba8",
+      "bytes": 216738,
+      "version": "2406.08250v1",
+      "storage": "external temporary cache; not committed"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2406.08250v1",
+      "retrieved_at": "2026-11-10T23:07:56.131933+00:00",
+      "sha256": "97adca63833676c578513de9234806af891135a6c159a98df42a2b9133f4e650",
+      "bytes": 1722333,
+      "version": "2406.08250v1",
+      "storage": "external temporary cache; not committed"
+    }
+  ],
+  "journal_comparison": "pending",
+  "source_archive": "pending"
+}
