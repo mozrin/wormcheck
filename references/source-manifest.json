@@ -15,8 +15,16 @@
       "bytes": 1722333,
       "version": "2406.08250v1",
       "storage": "external temporary cache; not committed"
+    },
+    {
+      "url": "https://arxiv.org/src/2406.08250v1",
+      "retrieved_at": "2026-11-10T23:14:12.710628+00:00",
+      "sha256": "96fda52e670ab6bd08fd526331288c53c2b3b0e6f8e9f17afb5077d287a526cc",
+      "bytes": 1635568,
+      "version": "2406.08250v1",
+      "storage": "external temporary cache; not committed"
     }
   ],
-  "journal_comparison": "pending",
-  "source_archive": "pending"
+  "journal_comparison": "Incomplete: publisher page HTTP 403 via web tool",
+  "source_archive": "Retrieved; main.tex equations 11 and 13 checked against implementation"
 }
