@@ -1,0 +1,26 @@
+{
+  "id": "precision-check",
+  "question": "Does an independent numerical transcription reproduce pressure residuals?",
+  "source_manifest": "references/source-manifest.json",
+  "environment_manifest": "results/manifests/environment.txt",
+  "base_commit": "1305945da7374e09b4c209f2b06fc3de064dd0e1",
+  "script_sha256": "eb11d458c94e5cf7ad87b56aab71fa38b50e655abdd2ce30aa7c0ee131b3c957",
+  "output": {
+    "path": "results/residuals/precision-check.json",
+    "sha256": "e8253c6de97c5946c1d3d221d6a1eebb069643732b38261a2b6452588cb2742c"
+  },
+  "parameters": "stored in output",
+  "algorithms": "mpmath numerical differentiation of independently transcribed source lapse and shape",
+  "precision_digits": [
+    30,
+    60,
+    100
+  ],
+  "density_conservation_absolute_tolerance": "10^(-digits+5)",
+  "status": "completed",
+  "resource_measurement": "not captured for initial execution; small targeted confirmation, not a parameter campaign",
+  "warnings": [
+    "same source assumptions shared",
+    "journal comparison pending"
+  ]
+}

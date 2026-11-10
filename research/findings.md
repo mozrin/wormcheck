@@ -15,3 +15,7 @@ Added PublishedModel symbolic package and three tests; all pass in the isolated 
 ## Analytical pressure obstruction
 
 Exact asymptotic coefficients are 8*omega/(1+omega) and 16*omega^2/(1+omega)^2. They preclude vanishing rational residuals on an open interval for omega!=0,-1 at fixed positive finite critical density. Residual Bianchi identity holds but does not force pressure residuals to zero. Branch B recorded for arXiv v1 strict Casimir case; see research/consistency-audit.md. Five tests pass. Journal correspondence and novelty remain unresolved.
+
+## Independent numerical confirmation and inventory
+
+Separate mpmath transcription and numerical differentiation agree with symbolic pressure residuals at four radii, at 30/60/100 digits. Normalized radial residual at r=1.1 is approximately 1.32068 using max(|lhs|,|rhs|,1/r^2). Density/conservation are within precision-scaled tolerance. Added mathematical source blocks and preliminary literature log; inventory is not yet complete at individual-symbol and equation-dependency level.

@@ -41,3 +41,22 @@ def test_casimir_residuals_have_nonzero_asymptotic_coefficients():
     for name, expected in [('radial',6),('angular',9)]:
         expression = s.factor(r**2*model.residuals[name].subs(omega,3))
         assert s.simplify(s.limit(expression,r,s.oo)-expected) == 0
+
+
+def test_independent_numerical_transcription_agrees():
+    import json
+    import subprocess
+    import sys
+    from pathlib import Path
+
+    script = Path(__file__).resolve().parents[1]/'experiments'/'precision_check.py'
+    result = json.loads(subprocess.check_output([sys.executable,str(script)],text=True))
+    model = PublishedModel()
+    r,r0,beta,critical,omega = model.symbols
+    for row in result['rows']:
+        if row['digits'] == 60:
+            parameters={r:s.Rational(row['r']),r0:1,beta:s.Rational(1,100),critical:s.Rational(5,1000),omega:3}
+            for name in ['radial','angular']:
+                symbolic = model.residuals[name].subs(parameters).evalf(50)
+                independent = s.Float(row['components'][name]['residual'],50)
+                assert abs(symbolic-independent) < s.Float('1e-45')
